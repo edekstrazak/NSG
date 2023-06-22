@@ -1,19 +1,10 @@
-const section = document.querySelector('.benefits');
-const cards = document.querySelectorAll('.benefits-card');
-const handleParallaxBenefits = () => {
-	let scrollValue = window.scrollY;
+import { alternateBetweenHeader } from './layouts/header';
+import { handleParallaxBenefits } from './layouts/breaker';
 
-	const observer = scrollValue - section.offsetTop + window.innerHeight;
+// window.onload = (() => {
+//   alternateBetweenHeader()
+// })
 
-	const rate = observer / 30;
-
-	if (observer >= window.innerHeight / 2) {
-		cards[0].style.transform = `translateX(-${rate}px)`;
-		cards[1].style.transform = `translateX(${rate}px)`;
-	} else {
-		cards[0].style.transform = `translateX(-${rate}px)`;
-		cards[1].style.transform = `translateX(${rate}px)`;
-	}
+window.onscroll = () => {
+	handleParallaxBenefits();
 };
-
-document.addEventListener('scroll', handleParallaxBenefits);
