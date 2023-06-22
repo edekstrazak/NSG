@@ -1,21 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/sass/main.scss">
-    <title>Nowoczesne Systemy Grzewcze - Dariusz Głuszkiewicz</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="h1">
-        <span class="h1-fixed">Instalujemy</span>
-        <span class="h1-option-1">panele fotowoltaiczne</span>
-        <span class="hidden">i</span>
-        <span class="h1-option-2">pompy ciepła</span>
-      </h1>
-    </header>
-    <script type="module" src="./src/js/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/sass/main.scss" />
+		<title>Nowoczesne Systemy Grzewcze - Dariusz Głuszkiewicz</title>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="h1">
+				<span class="h1-fixed">Instalujemy</span>
+				<span class="h1-option-1">panele fotowoltaiczne</span>
+				<span class="hidden">i</span>
+				<span class="h1-option-2">pompy ciepła</span>
+			</h1>
+		</header>
+		<main>
+			<section class="aboutus wrapper section-padding">
+				<div class="aboutus-ctn">
+					<div class="aboutus-img">
+						<img
+							src="./src/img/about-us.jpg"
+							alt="zdjecie pokazujace nic narazie :)"
+						/>
+					</div>
+					<div class="aboutus-content">
+						<div class="aboutus-content-heading">
+							<h2 class="section-heading">Nasza firma</h2>
+							<p class="section-subheading">krótko o nas...</p>
+						</div>
+						<p class="aboutus-text">
+							Nasza firma od wielu lat specjalizuje się w instalacjach
+							odnawialnych źródeł energii skutecznie stosując sprawdzone
+							technologie. Naszym celem jest promowanie zrównoważonej energii
+							poprzez wykorzystanie energii słonecznej do produkcji energii
+							elektrycznej, która zasila pompy ciepła
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="stats wrapper section-padding">
+				<div class="stats-cards">
+					<div class="stats-card">
+						<div class="stats-card-circle">
+							<i class="bx bxs-sun"></i>
+						</div>
+						<div class="stats-card-number">1000+</div>
+						<div class="stats-card-description">
+							instalacji fotowoltaicznych
+						</div>
+					</div>
+					<div class="stats-card">
+						<div class="stats-card-circle">
+							<i class="bx bx-water"></i>
+						</div>
+						<div class="stats-card-number">100+</div>
+						<div class="stats-card-description">instalacji pomp ciepła</div>
+					</div>
+				</div>
+			</section>
+			<section class="services"></section>
+			<section class="benefits section-padding wrapper">
+				<div class="benefits-cards">
+					<div class="benefits-card">
+						<div class="benefits-card-icon">
+							<i class="bx bxs-sun"></i>
+						</div>
+						<div class="benefits-card-content">
+							<div class="benefits-card-heading">Własne źródło prądu</div>
+							<div class="benefits-card-description">
+								to mniejsza zależność od rosnących cen prądu
+							</div>
+						</div>
+					</div>
+					<div class="benefits-card">
+						<div class="benefits-card-icon">
+							<i class="bx bx-water"></i>
+						</div>
+						<div class="benefits-card-content">
+							<div class="benefits-card-heading">Własne źródło ciepła</div>
+							<div class="benefits-card-description">
+								pozwala uniezależnić się od rosnących cen paliw stałych
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="vector"></div>
+			</section>
+			<section class="breaker">
+				<div class="section-shadow"></div>
+				<h2 class="breaker-heading">Zaufaj nam!</h2>
+				<p class="breaker-text">I poznaj nowe oblicze oszczędzania energii</p>
+				<button class="breaker-btn">Skontaktuj sie</button>
+			</section>
+			<section style="height: 100vh"></section>
+		</main>
+		<script type="module" src="./src/js/main.js"></script>
+	</body>
 </html>

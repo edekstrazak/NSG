@@ -1,0 +1,39 @@
+@use '../utilities/colors' as *;
+.breaker {
+    position: relative;
+    height: 40vh;
+    background-image: url('../img/solar-panel.jpg');
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 1.5rem;
+    &-heading {
+        font-size: 3rem;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+    &-text {
+        color: #D6D6D6;
+        font-size: 1.5rem;
+        z-index: 2;
+    }
+    &-btn {
+        border: none;
+        background-color: $main-color;
+        font-size: 1.4rem;
+        color: white;
+        padding: .7rem 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .section-shadow {
+        z-index: 1;
+    }
+
+}

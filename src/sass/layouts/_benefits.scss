@@ -1,0 +1,85 @@
+@use '../utilities/colors' as *;
+.benefits {
+	position: relative;
+	&-cards {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 8rem;
+	}
+	&-card {
+		position: relative;
+		padding: 2rem;
+		padding-top: 0;
+		width: 100%;
+		max-width: 30rem;
+		border: 1px solid rgba(0, 0, 0, 0.16);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border-radius: 10px;
+		box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.21);
+		transition: transform 0.3s;
+        background-color: white;
+		&-icon {
+			font-size: 5rem;
+			color: $main-color;
+		}
+		&-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.5rem;
+		}
+		&-heading {
+			font-size: 2rem;
+		}
+		&-description {
+			font-size: 1.3rem;
+			color: rgba(0, 0, 0, 0.646);
+			text-align: center;
+		}
+	}
+    &-card:nth-child(1):hover {
+        transform: translateX(-1rem);
+    }
+    &-card:nth-child(2):hover {
+        transform: translateX(1rem);
+    }
+	// &-card::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	height: 5rem;
+	// 	width: 5rem;
+	// 	background-color: rgb(206, 206, 206);
+	// 	top: -0.3rem;
+	// 	right: -0.3rem;
+	// 	border-radius: 10px;
+	// 	z-index: -15;
+	// }
+	.vector {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+        transform: translate(-50%,-50%);
+		z-index: -15;
+		height: 10rem;
+		width: 13rem;
+		background-image: url('/../src/img/Vector.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+	}
+}
+
+@media (min-width: 768px) {
+	.benefits {
+		&-cards {
+			flex-direction: row;
+			gap: 8rem;
+			justify-content: center;
+		}
+	}
+}
