@@ -1,6 +1,6 @@
 git clone https://github.com/edekstrazak/NSG.git
 
-git remote add tbsk https://github.com/edekstrazak/NSG.git
+git remote add nsg https://github.com/edekstrazak/NSG.git
 
 git checkout --track rebax/nazwa_brancha ( tylko za pierwszym razem) | git checkout nazwa_brancha
 
