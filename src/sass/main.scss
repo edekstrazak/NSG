@@ -1,11 +1,11 @@
-@use 'abstracts' as *;
 @use 'base' as *;
+@use 'abstracts' as *;
 @use 'components' as *;
 @use 'layouts' as *;
 @use 'utilities' as *;
 
 body {
-  background-color: #000;
+  font-family: 'Poppins Light', sans-serif;
 }
 @media (min-width: 576px) {
 	html {
