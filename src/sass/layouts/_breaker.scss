@@ -12,26 +12,19 @@
     color: white;
     gap: 1.5rem;
     &-heading {
-        font-size: 3rem;
-        text-transform: uppercase;
-        z-index: 2;
+      font-size: 3rem;
+      text-transform: uppercase;
+      z-index: 2;
     }
     &-text {
-        color: #D6D6D6;
-        font-size: 1.5rem;
-        z-index: 2;
+      text-align: center;
+      color: #D6D6D6;
+      font-size: 1.5rem;
+      z-index: 2;
     }
     &-btn {
-        border: none;
-        background-color: $main-color;
-        font-size: 1.4rem;
-        color: white;
-        padding: .7rem 2rem;
-        border-radius: 10px;
-        cursor: pointer;
-        z-index: 2;
+      z-index: 2;
     }
-
     .section-shadow {
         z-index: 1;
     }

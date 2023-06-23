@@ -1,9 +1,14 @@
+@use '../abstracts' as *;
+
 .button {
   position: relative;
   width: max-content;
-  padding: 1rem 2rem;
+  padding: .7rem 2rem;
   font-size: 1.5rem;
-  font-family: 'Poppins-Medium';
+  font-family: 'Poppins Medium';
+  color: #fff;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
   &::after {
     position: absolute;
@@ -22,11 +27,13 @@
     opacity: 1;
   }
   &.primary {
+    background-color: $orange-main;
     &::after {
       background-color: #fff;
     }
   }
   &.secondary {
+    background-color: $blue-main;
     &::after {
       background-color: #000;
     }

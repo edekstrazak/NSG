@@ -40,6 +40,7 @@
     top: 50vh;
     left: 50vw;
     transform: translate(-50%, Calc(-50% + (3rem * 0.7 / 2) - 1px));
+    text-align: center;
     background-color: $blue-main;
     z-index: 4;
     &-bg {
