@@ -1,0 +1,59 @@
+@use '../abstracts' as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  color: #fff;
+  background-color: transparent;
+  &-link {
+    padding: 1rem;
+  }
+  &-subnav {
+    width: 100%;
+    padding-block: 1rem;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      gap: 2rem;
+    }
+    min-height: max-content;
+  }
+  .line {
+    height: 1px;
+    background-color: #fff;
+    transition: background-color .3s;
+  }
+  &-main {
+    font-size: 1.5rem;
+    padding-block: 1rem;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &-anchors {
+    display: flex;
+    gap: 1rem;
+  }
+  &-logo {
+    font-family: 'Poppins Medium';
+  }
+  &[data-scrolled="true"]{
+    color: #000;
+    background-color: #fff;
+    .nav-subnav {
+      max-height: 0;
+    }
+    .line {
+      background-color: #000;
+    }
+  }
+}
+
+@media (min-width: 1450px) {
+  .nav-link:last-child {
+    margin-right: -1rem;
+  }
+}

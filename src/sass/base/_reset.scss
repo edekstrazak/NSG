@@ -22,6 +22,15 @@ h6 {
   font-weight: normal;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
 @media (min-width: 576px) {
 	html {
 		font-size: 68.75%;
