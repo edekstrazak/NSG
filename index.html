@@ -50,10 +50,10 @@
             </a>
             <ul class="nav-desktop-anchors">
               <li class="nav-list-item"><a href="#">Home</a></li>
-              <li class="nav-list-item"><a href="#">O nas</a></li>
-              <li class="nav-list-item"><a href="#">Usługi</a></li>
+              <li class="nav-list-item"><a href="#o-nas">O nas</a></li>
+              <li class="nav-list-item"><a href="#uslugi">Usługi</a></li>
               <li class="nav-list-item"><a href="#">Finanse</a></li>
-              <li class="nav-list-item"><a href="#">Kontakt</a></li>
+              <li class="nav-list-item"><a href="#kontakt">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -69,10 +69,10 @@
         </div>
         <ul id="nav-mobile-list" class="nav-mobile-list">
           <li class="nav-list-item"><a href="#">Home</a></li>
-          <li class="nav-list-item"><a href="#">O nas</a></li>
-          <li class="nav-list-item"><a href="#">Usługi</a></li>
+          <li class="nav-list-item"><a href="#o-nas">O nas</a></li>
+          <li class="nav-list-item"><a href="#uslugi">Usługi</a></li>
           <li class="nav-list-item"><a href="#">Finanse</a></li>
-          <li class="nav-list-item"><a href="#">Kontakt</a></li>
+          <li class="nav-list-item"><a href="#kontakt">Kontakt</a></li>
         </ul>
         <div class="nav-mobile-list-shadow"></div>
       </div>
@@ -95,7 +95,7 @@
 			</h1>
 		</header>
 		<main>
-			<section class="aboutus wrapper section-padding">
+			<section id="o-nas" class="aboutus wrapper section-padding">
 				<div class="aboutus-ctn">
 					<div class="aboutus-img">
 						<img
@@ -138,8 +138,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="services section-padding">
-        <div class="services-content wrapper">
+			<section id="uslugi" class="services">
+        <div class="services-content section-padding wrapper">
           <div class="services-section-heading">
             <h2 class="section-heading">Usługi</h2>
             <p class="section-subheading">zobacz, czym zajmuje się nasza firma</p>
@@ -159,6 +159,14 @@
               </p>
             </div>
           </div>
+          <p class="services-other section-text-big">Pozostały zakres naszych usług:</p>
+          <ul class="services-pills">
+            <li class="services-pill section-text">Kotły gazowe</li>
+            <li class="services-pill section-text">Kotły V klasy na ekogroszek</li>
+            <li class="services-pill section-text">Kotły pelletowe</li>
+            <li class="services-pill section-text">Kolektory słoneczne</li>
+            <li class="services-pill section-text">Instalacje wodno-kanalizacyjne oraz montaż ogrzewania</li>
+          </ul>
         </div>
         <div class="services-background">
           <div class="panels">
@@ -202,12 +210,12 @@
 				<div class="section-shadow"></div>
 				<h2 class="breaker-heading">Zaufaj nam!</h2>
 				<p class="breaker-text">I poznaj nowe oblicze oszczędzania energii</p>
-				<button class="button primary breaker-btn">Skontaktuj sie</button>
+				<a href="#kontakt" class="button primary breaker-btn">Skontaktuj się</a>
 			</section>
-			<section class="gallery section-padding wrapper">
+			<section id="galeria" class="gallery section-padding wrapper">
 				<div class="gallery-section-heading">
 					<h2 class="section-heading">Galeria</h2>
-					<p class="section-subheading">zaobacz nasze instacje</p>
+					<p class="section-subheading">zobacz nasze instalacje</p>
 				</div>
 				<div class="gallery-ctn">
 					<div class="gallery-img">
@@ -219,27 +227,8 @@
 					<div class="gallery-img">
 						<img src="./src/img/ziomy3.jpg" alt="">
 					</div>
-					<!-- <div class="gallery-img">
-						<img src="./src/img/ziomy4.jpg" alt="">
-					</div>
-					<div class="gallery-img">
-						<img src="./src/img/ziomy5.jpg" alt="">
-					</div>
-					<div class="gallery-img">
-						<img src="./src/img/ziomy4.jpg" alt="">
-					</div>
-					<div class="gallery-img">
-						<img src="./src/img/ziomy.jpg" alt="">
-					</div>
-					<div class="gallery-img">
-						<img src="./src/img/ziomy2.jpg" alt="">
-					</div>
-					<div class="gallery-img">
-						<img src="./src/img/ziomy3.jpg" alt="">
-					</div> -->
 				</div>
 			</section>
-			<section style="height: 100vh"></section>
 		</main>
 		<script type="module" src="./src/js/main.js"></script>
 	</body>
