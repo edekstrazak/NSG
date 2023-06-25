@@ -5,7 +5,6 @@
   width: max-content;
   padding: .7rem 2rem;
   font-size: 1.5rem;
-  font-family: 'Poppins Medium';
   color: #fff;
   border-radius: 10px;
   border: none;
@@ -16,6 +15,12 @@
     height: 100%;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: $orange-main;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity .3s;
   }

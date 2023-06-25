@@ -28,5 +28,9 @@
     .section-shadow {
         z-index: 1;
     }
-
+  .button {
+    &::after {
+      content: 'Skontaktuj się'
+    }
+  }
 }
