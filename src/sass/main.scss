@@ -5,8 +5,17 @@
 @use 'utilities' as *;
 
 body {
-  font-family: 'Poppins Light', sans-serif;
-  background-color: #fff;
+	font-family: 'Poppins Light', sans-serif;
+	background-color: #fff;
+}
+.dark {
+	$orange-main: #ffffff !important;
+	$orange-darker: #ffffff !important;
+	$orange-dark: #ffffff !important;
+	$orange-light: #ffffff !important;
+	$orange-very-light: #ffffff !important;
+	$blue-main: #ffffff !important;
+	$inbetween-orange-blue: #ffffff !important;
 }
 @media (min-width: 576px) {
 	html {

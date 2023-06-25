@@ -18,6 +18,16 @@ window.onscroll = () => {
   handlePrallaxAboutUs();
 };
 
+const input = document.querySelector('input');
+
+const handleChangeMode = () => {
+    if (input.checked) {
+        document.body.classList.add('dark')
+    }
+    
+}
+input.addEventListener('click', handleChangeMode)
+
 
 
 
