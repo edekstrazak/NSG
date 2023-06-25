@@ -14,6 +14,11 @@
       width: 100%;
       max-height: 100px;
       transition: max-height .2s;
+      .nav-list-item {
+        a {
+          padding: .75rem;
+        }
+      }
       &::after {
         content: '';
         position: absolute;
@@ -28,7 +33,7 @@
       }
       .nav-list-item:nth-child(1),
       .nav-list-item:nth-child(2) {
-        margin-inline: 1.5rem;
+        margin-inline: .75rem;
       }
       .wrapper {
         display: flex;
@@ -171,7 +176,8 @@
       }
       .nav-list-item {
         a {
-          &:hover {
+          &:hover,
+          &:focus {
             color: $orange-darker;
           }
         }
