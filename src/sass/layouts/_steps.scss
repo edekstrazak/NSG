@@ -3,33 +3,36 @@
 .steps {
     .section-heading {
         text-align: center;
-        margin-bottom: 4rem;
+        padding-block: 4rem;
+    }
+    .wrapper {
+      max-width: 1000px;
     }
     background-image: url('/src/img/bg.jpg');
     &-ctn {
         position: relative;
-        padding-left: 12rem;
+        padding-left: 8rem;
         display: flex;
         flex-direction: column;
         gap: 4rem;
-
+        padding-bottom: 4rem;
     }
     &-ctn::before {
         content: '';
         position: absolute;
-        height: 105%;
+        height: 100%;
         width: 3px;
         background-color: $blue-main;
-        left: 6rem;
+        left: Calc(2.5rem - 1.5px);
     }
     &-ctn::after {
         content: '';
         position: absolute;
-        bottom: -5%;
+        bottom: 0%;
         height: 3px;
         width: 2rem;
         background-color: $blue-main;
-        left: 6rem;
+        left: Calc(2.5rem - 1.5px);
     }
     &-step {
         position: relative;
@@ -46,7 +49,7 @@
     &-step::before {
         content: '1';
         position: absolute;
-        left: -8.5rem;
+        left: -8rem;
         height: 5rem;
         width: 5rem;
         top: -1rem;
