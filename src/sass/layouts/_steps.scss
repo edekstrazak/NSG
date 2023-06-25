@@ -54,7 +54,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;        
+        font-size: 2rem;    
+        padding: 1rem;  
     }
     &-step:nth-child(2)::before {
         content: '2';
