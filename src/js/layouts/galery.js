@@ -33,7 +33,8 @@ if (imgIndex < images.length) {
   imgIndex++
   popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 } else {
-  return
+  imgIndex = 1
+  popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 }
 }
 const handlePrevImg = () => {
@@ -41,7 +42,8 @@ if (imgIndex > 1) {
   imgIndex--
   popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 } else {
-  return
+  imgIndex = images.length
+  popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 }
 }
 
