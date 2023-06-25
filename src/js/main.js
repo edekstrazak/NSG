@@ -1,19 +1,24 @@
 import { alternateBetweenHeader } from './layouts/header';
 import { handleParallaxBenefits } from './layouts/breaker';
 import { toggleSubnavigation } from './layouts/nav';
+import { handlePrallaxAboutUs } from './layouts/aboutus';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
+AOS.init();
 window.onload = (() => {
   alternateBetweenHeader()
   toggleSubnavigation()
 })
 
+
 window.onscroll = () => {
 	handleParallaxBenefits();
   toggleSubnavigation()
+  handlePrallaxAboutUs();
 };
 
-// const images = document.querySelectorAll('.gallery-img');
-// const closeBtn = document.querySelectorAll('.mark');
 
-// closeBtn.forEach((btn) => btn.addEventListener('click', handleClosePopUp));
-// images.forEach((el) => el.addEventListener('click', handlePopUp));
+
+
+
