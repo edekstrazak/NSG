@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .hidden {
 	display: none;
 }
@@ -27,6 +29,10 @@
   }
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .bold {
   font-family: 'Poppins Medium';
 }
@@ -41,6 +47,26 @@
 	max-width: 1400px;
 }
 
-.active-section {
-	color: yellow;
+
+.arrow {
+  position: relative;
+  height: 60px;
+  width: 3px;
+  background-color: $orange-main;
+  margin: 4rem auto;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    background-color: $orange-main;
+  }
+  &::before {
+    transform: rotate(-37.5deg) translate(-8.5px, -3px);
+  }
+  &::after {
+    transform: rotate(37.5deg) translate(8.5px, -3px);
+  }
 }
