@@ -30,6 +30,13 @@
 		/>
 	</head>
 	<body>
+		<div class="pop-up">
+			<div class="pop-up_img">
+				<button class="mark"><i class="bx bx-x"></i></button>
+				<button class="button primary next">Następny</button>
+				<button class="button primary prev">Poprzedni</button>
+			</div>
+		</div>
 		<nav class="nav">
 			<div class="nav-desktop">
 				<div class="nav-desktop-subnav">
@@ -90,13 +97,6 @@
 				<div class="nav-mobile-list-shadow"></div>
 			</div>
 		</nav>
-		<div class="pop-up">
-			<div class="pop-up_img">
-				<button class="mark"><i class="bx bx-x"></i></button>
-				<button class="button primary next">Następny</button>
-				<button class="button primary prev">Poprzedni</button>
-			</div>
-		</div>
 		<header class="header spy" id="home">
 			<h1 class="h1">
 				<span class="h1-fixed">Instalujemy</span>
@@ -256,55 +256,101 @@
 				</div>
 				<div class="vector"></div>
 			</section>
-      <section class="financing" id="finanse">
-        <div class="wrapper section-padding">
-          <div class="financing-section-heading">
-            <h2 class="section-heading">Finansowanie</h2>
-            <p class="section-subheading">zobacz w jaki sposób możesz zapłacić za usługę</p>
-          </div>
-          <ul class="financing-options">
-            <li class="financing-option section-text-big">Przelew / gotówka</li>
-            <li class="financing-option section-text-big">Wygodne raty</li>
-            <li class="financing-option section-text-big">Dofinansowania</li>
-          </ul>
-          <div class="arrow"></div>
-          <div class="financing-cofinances">
-            <div class="info-and-options">
-              <p class="financing-info">
-                Dla wszystkich dofinansowań kwota jest ustalana indywidualnie w zależności dla zakresu inwestycji. Udzielając pełnomocnictwa załatwiamy wszelkie formalności.
-              </p>
-              <div class="options">
-                <div class="financing-cofinance">
-                  <h3 class="financing-cofinance-title section-subheading">Mój Prąd 5.0</h3>
-                  <p class="financing-cofinance-text section-text">
-                    Uzyskaj maksymalnie do <span class="inline-block">58 000</span> zł dofinansowania. 
-                  </p>
-                  <a href="#" class="financing-cofinance-link">dowiedz się więcej...</a>
-                </div>
-                <div class="financing-cofinance">
-                  <h3 class="financing-cofinance-title section-subheading">Moje Ciepło</h3>
-                  <p class="financing-cofinance-text section-text">
-                    Uzyskaj maksymalnie do <span class="inline-block">21 000</span> zł dofinansowania. 
-                  </p>
-                  <a href="#" class="financing-cofinance-link">dowiedz się więcej...</a>
-                </div>
-              </div>
-            </div>
-            <div class="big-option">
-              <div class="financing-cofinance">
-                <h3 class="financing-cofinance-title section-subheading">Czyste powietrze</h3>
-                <p class="financing-cofinance-text section-text">
-                  Uzyskaj maksymalnie do <span class="inline-block">135 000</span> zł dofinansowania. Możliwość dotacji przez ścieżkę bankową - skrócony czas wypłaty dofinansowania. Realizacja dotacji z prefinansowaniem dla podwyższonego i najwyższego progu dotacji.
-                </p>
-                <a href="#" class="financing-cofinance-link">dowiedz się więcej...</a>
-              </div>
-            </div>
-          </div>
-          <div class="arrow second"></div>
-        </div>
-      </section>
+			<section class="financing" id="finanse">
+				<div class="wrapper section-padding">
+					<div
+						class="financing-section-heading"
+						data-aos="zoom-out"
+						data-aos-duration="800"
+						data-aos-once="true"
+						data-aos-offset="100"
+					>
+						<h2 class="section-heading">Finansowanie</h2>
+						<p class="section-subheading">
+							zobacz w jaki sposób możesz zapłacić za usługę
+						</p>
+					</div>
+					<ul
+						class="financing-options"
+						data-aos="fade-up"
+						data-aos-duration="800"
+						data-aos-once="true"
+						data-aos-offset="100"
+					>
+						<li class="financing-option section-text-big">Przelew / gotówka</li>
+						<li class="financing-option section-text-big">Wygodne raty</li>
+						<li class="financing-option section-text-big">Dofinansowania</li>
+					</ul>
+					<div
+						class="arrow"
+						data-aos="fade-up"
+						data-aos-duration="800"
+						data-aos-once="true"
+						data-aos-offset="100"
+					></div>
+					<div
+						class="financing-cofinances"
+						data-aos="fade-up"
+						data-aos-duration="800"
+						data-aos-once="true"
+						data-aos-offset="100"
+					>
+						<div class="info-and-options">
+							<p class="financing-info">
+								Dla wszystkich dofinansowań kwota jest ustalana indywidualnie w
+								zależności dla zakresu inwestycji. Udzielając pełnomocnictwa
+								załatwiamy wszelkie formalności.
+							</p>
+							<div class="options">
+								<div class="financing-cofinance">
+									<h3 class="financing-cofinance-title section-subheading">
+										Mój Prąd 5.0
+									</h3>
+									<p class="financing-cofinance-text section-text">
+										Uzyskaj maksymalnie do
+										<span class="inline-block">58 000</span> zł dofinansowania.
+									</p>
+									<a href="#" class="financing-cofinance-link"
+										>dowiedz się więcej...</a
+									>
+								</div>
+								<div class="financing-cofinance">
+									<h3 class="financing-cofinance-title section-subheading">
+										Moje Ciepło
+									</h3>
+									<p class="financing-cofinance-text section-text">
+										Uzyskaj maksymalnie do
+										<span class="inline-block">21 000</span> zł dofinansowania.
+									</p>
+									<a href="#" class="financing-cofinance-link"
+										>dowiedz się więcej...</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="big-option">
+							<div class="financing-cofinance">
+								<h3 class="financing-cofinance-title section-subheading">
+									Czyste powietrze
+								</h3>
+								<p class="financing-cofinance-text section-text">
+									Uzyskaj maksymalnie do
+									<span class="inline-block">135 000</span> zł dofinansowania.
+									Możliwość dotacji przez ścieżkę bankową - skrócony czas
+									wypłaty dofinansowania. Realizacja dotacji z prefinansowaniem
+									dla podwyższonego i najwyższego progu dotacji.
+								</p>
+								<a href="#" class="financing-cofinance-link"
+									>dowiedz się więcej...</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="arrow second"></div>
+				</div>
+			</section>
 			<section class="steps">
-        <h2 class="section-heading">Kroki dofinansowania</h2>
+				<h2 class="section-heading">Kroki dofinansowania</h2>
 				<div class="wrapper section-padding">
 					<div class="steps-ctn">
 						<div class="steps-step">
@@ -346,13 +392,13 @@
 					<p class="section-subheading">zobacz nasze instalacje</p>
 				</div>
 				<div class="gallery-ctn">
-					<div class="gallery-img">
+					<div class="gallery-img" tabindex="1">
 						<img src="./src/img/img_1.jpeg" alt="" />
 					</div>
-					<div class="gallery-img">
+					<div class="gallery-img" tabindex="1">
 						<img src="./src/img/img_2.jpeg" alt="" />
 					</div>
-					<div class="gallery-img">
+					<div class="gallery-img" tabindex="1">
 						<img src="./src/img/img_3.jpeg" alt="" />
 					</div>
 				</div>

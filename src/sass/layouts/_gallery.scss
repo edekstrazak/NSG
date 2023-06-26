@@ -14,7 +14,7 @@
 		position: relative;
 		height: 25rem;
 		width: 25rem;
-        cursor: pointer;
+		cursor: pointer;
 
 		img {
 			border-radius: 10px;
@@ -29,7 +29,7 @@
 		height: 5rem;
 		width: 5rem;
 		background-color: rgb(195, 195, 195);
-		transition: background-color .3s;
+		transition: background-color 0.3s;
 		border-radius: 10px;
 		top: -0.7rem;
 		right: -0.7rem;
@@ -37,5 +37,11 @@
 	}
 	&-img:hover::before {
 		background-color: $main-color;
+	}
+	&-img:focus::before {
+		background-color: $main-color;
+	}
+	&-img:focus {
+		outline: none;
 	}
 }
