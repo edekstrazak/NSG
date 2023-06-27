@@ -22,6 +22,7 @@
     width: max-content;
     padding: 1rem 2rem;
     border: 1px solid black;
+    border-radius: 10px;
     &:nth-child(3) {
       border: 1px solid $orange-main;
     }
@@ -44,6 +45,7 @@
   &-cofinance {
     padding: 2rem;
     border: 1px solid #868686;
+    border-radius: 10px;
     &-text {
       margin: 2rem 0 1.5rem 1rem;
     }
@@ -55,7 +57,8 @@
   &-info {
     font-size: 1.6rem;
     padding: 2rem;
-    border: 1px solid #868686;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
   }
 }
 

@@ -30,23 +30,30 @@ const handleClosePopUp = () => {
 	}, 300);
 };
 
+const handleImageChange = (index) => {
+  if(import.meta.env.MODE == 'development') {
+    popUpImg.style.backgroundImage = `url('./src/img/img_${index}.jpeg')`;
+  }
+  else {
+    popUpImg.style.backgroundImage = `url('./img_${index}.jpeg')`;
+  }
+}
+
 const handleNextImg = () => {
 	if (imgIndex < images.length) {
 		imgIndex++;
-		popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 	} else {
 		imgIndex = 1;
-		popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 	}
+  handleImageChange(imgIndex)
 };
 const handlePrevImg = () => {
 	if (imgIndex > 1) {
 		imgIndex--;
-		popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 	} else {
 		imgIndex = images.length;
-		popUpImg.style.backgroundImage = `url('./src/img/img_${imgIndex}.jpeg')`;
 	}
+  handleImageChange(imgIndex)
 };
 
 const handleClickOutside = (e) => {
