@@ -2,6 +2,7 @@ import viteImageMin from 'vite-plugin-imagemin'
 
 export default () => {
   return {
+    base: './',
     plugins: [
       viteImageMin({
         gifsicle: {
