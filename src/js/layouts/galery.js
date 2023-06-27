@@ -35,7 +35,7 @@ const handleImageChange = (index) => {
     popUpImg.style.backgroundImage = `url('./src/img/img_${index}.jpeg')`;
   }
   else {
-    popUpImg.style.backgroundImage = `url('./img_${index}.jpeg')`;
+    popUpImg.style.backgroundImage = `url('./assets/img_${index}.jpeg')`;
   }
 }
 
