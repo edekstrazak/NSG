@@ -3,6 +3,17 @@ import viteImageMin from 'vite-plugin-imagemin'
 export default () => {
   return {
     base: './',
+    build: {
+      rollupOptions: {
+        output: {
+         assetFileNames: function (file) {
+          return file.name.includes('img_')
+            ? `assets/[name].[ext]`
+            : `assets/[name]-[hash].[ext]`;
+          },
+        }
+      }
+    },
     plugins: [
       viteImageMin({
         gifsicle: {
