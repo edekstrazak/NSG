@@ -1,6 +1,6 @@
 # NSG
 
-A group commercial project.
+A group commercial project for photovoltaics and heating pumps installation business.
 
 ## Techstack
 - HTML
