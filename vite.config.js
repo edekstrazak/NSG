@@ -7,7 +7,7 @@ export default () => {
       rollupOptions: {
         output: {
          assetFileNames: function (file) {
-          return file.name.includes('img_')
+          return file.name.includes('galeria_')
             ? `assets/[name].[ext]`
             : `assets/[name]-[hash].[ext]`;
           },

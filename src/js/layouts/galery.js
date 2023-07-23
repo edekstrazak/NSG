@@ -12,7 +12,7 @@ const handlePopUp = (e, index) => {
 	popUp.classList.add('show-pop-up');
 	popUpImg.style.backgroundImage = `url(${objectBg})`;
 	popUp.classList.remove('close-animation');
-	imgIndex = index + 1;
+	imgIndex = index;
 	IsPopUpActive = true;
 };
 images.forEach((el, index) => {
@@ -32,18 +32,18 @@ const handleClosePopUp = () => {
 
 const handleImageChange = (index) => {
   if(import.meta.env.MODE == 'development') {
-    popUpImg.style.backgroundImage = `url('./src/img/img_${index}.jpeg')`;
+    popUpImg.style.backgroundImage = `url('./src/img/galeria/galeria_${index}.webp')`;
   }
   else {
-    popUpImg.style.backgroundImage = `url('./assets/img_${index}.jpeg')`;
+    popUpImg.style.backgroundImage = `url('./assets/galeria_${index}.webp')`;
   }
 }
 
 const handleNextImg = () => {
-	if (imgIndex < images.length) {
+	if (imgIndex < images.length - 1) {
 		imgIndex++;
 	} else {
-		imgIndex = 1;
+		imgIndex = 0;
 	}
   handleImageChange(imgIndex)
 };
@@ -51,7 +51,7 @@ const handlePrevImg = () => {
 	if (imgIndex > 1) {
 		imgIndex--;
 	} else {
-		imgIndex = images.length;
+		imgIndex = images.length - 1;
 	}
   handleImageChange(imgIndex)
 };
