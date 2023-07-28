@@ -1,6 +1,7 @@
 @use '../utilities/colors' as *;
 .benefits {
 	position: relative;
+  overflow: hidden;
 	&-cards {
 		display: flex;
 		flex-direction: column;
