@@ -423,7 +423,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="contact wrapper section-padding" id="kontakt">
+			<section class="contact wrapper" id="kontakt">
 				<div class="contact-section-heading">
 					<h2 class="section-heading">Kontakt</h2>
 					<p class="section-subheading">napisz do nas...</p>
@@ -434,21 +434,23 @@
 					</div>
 					<form class="contact-ctn-form">
 						<div class="contact-input-ctn">
-							<input type="text" name="firstName_lastName">
+							<input class="input" type="text" name="firstName_lastName">
 							<label for="firstName_lastName">Imię i nazwisko</label>
 						</div>
 						<div class="contact-input-ctn">
-							<input type="email" name="email">
+							<input class="input" type="email" name="email">
 							<label for="email">Email</label>
 						</div>
 						<div class="contact-input-ctn">
-							<textarea name="msg"></textarea>
-							<label for="msg">Imię i nazwisko</label>
+							<textarea class="input" name="msg"></textarea>
+							<label for="msg">Wiadomość</label>
 						</div>
+						<button class="button primary breaker-btn">Skontaktuj się</button>
 					</form>
 				</div>
 			</section>
 		</main>
+
 		<script type="module" src="./src/js/main.js"></script>
 		<script type="module" src="./src/js/layouts/galery.js"></script>
 	</body>

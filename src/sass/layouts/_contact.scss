@@ -1,16 +1,17 @@
+@use '../abstracts' as *;
 .contact {
+    padding: 0 2rem 4rem 2rem;
     &-section-heading {
         text-align: center;
     }
     &-ctn {
         display: flex;
         flex-direction: column-reverse;
-        gap: 2rem;
+        gap: 4rem;
         margin-top: 4rem;
-        height: 40rem;
 
         &-map {
-          height: 20rem;
+          height: 25rem;
           width: 100%;
             iframe{
                height: 100%;
@@ -18,8 +19,63 @@
             }
         }
         &-form {
-          height: 20rem;
           width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2rem;
+        }
+
+    }
+    &-input-ctn {
+        position: relative;
+        width: max-content;
+        .input {
+            border: 1px solid black;
+            border-radius: 8px;
+            padding: 1.2rem;
+            font-size: 1.5rem;
+            width: 25rem;
+            appearance: none;
+          }
+          .input:focus {
+            outline: none;
+          }
+          .input:focus + label {
+            color: $orange-main;
+          }
+          label {
+            position: absolute;
+            top: 1px;
+            transform: translateY(-50%);
+            left: 5%;
+            font-size: 1.5rem;
+            pointer-events: none;
+            color: rgb(75, 75, 75);
+            background-color: #fff;
+            padding: 0 1rem;
+            transition: color .3s;
+          }
+          textarea {
+            resize: vertical;
+          }
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        &-ctn {
+            gap: 2rem;
+            flex-direction: row;
+            &-map {
+                height: 30rem;
+                width: 55%;
+            }
+            &-form {
+                width: 45%;
+                gap: 3rem;
+            }
         }
     }
 }
