@@ -1,6 +1,7 @@
 @use '../abstracts' as *;
 
 .financing {
+  overflow: hidden;
   .section-subheading {
     color: #000;
   }
@@ -39,6 +40,7 @@
     }
     .options {
       display: flex;
+      flex-direction: column;
       gap: 2rem;
     }
   }
@@ -75,6 +77,9 @@
         .financing-cofinance {
           width: Calc(50% - 1rem);
         }
+      }
+      .options {
+        flex-direction: row;
       }
     }
   }

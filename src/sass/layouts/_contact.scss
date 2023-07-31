@@ -1,0 +1,25 @@
+.contact {
+    &-section-heading {
+        text-align: center;
+    }
+    &-ctn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        margin-top: 4rem;
+        height: 40rem;
+
+        &-map {
+          height: 20rem;
+          width: 100%;
+            iframe{
+               height: 100%;
+               width: 100%;
+            }
+        }
+        &-form {
+          height: 20rem;
+          width: 100%;
+        }
+    }
+}
