@@ -1,5 +1,8 @@
 @use '../abstracts' as *;
 .contact {
+  .error-info {
+    color: #590909;
+  }
     padding: 0 2rem 4rem 2rem;
     &-section-heading {
         text-align: center;
@@ -57,6 +60,7 @@
             transition: color .3s;
           }
           textarea {
+            font: inherit;
             resize: vertical;
           }
         
