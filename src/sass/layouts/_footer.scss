@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: $orange-main;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  a {
+
+    width: max-content;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  a:hover {
+    color: $blue-main;
+  }
+
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    height: 6rem;
+    align-items: center;
+    flex-direction: row;
+  justify-content: space-evenly;
+
+  .info {
+    flex-direction: row;
+  }
+  }
+}
