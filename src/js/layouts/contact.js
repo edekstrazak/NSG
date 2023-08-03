@@ -34,4 +34,5 @@ formBtn.addEventListener('click', (e) => {
       return e.preventDefault()
     }
   }
+  errorInfo.textContent = ''
 })
