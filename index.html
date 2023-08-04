@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="W sposób kompleksowy instalujemy pompy ciepła i fotowoltaikę. Zainwestuj w przyszłość i zacznij oszczędzać energię i pieniądze już dziś!" />
     <link rel="stylesheet" href="./src/sass/main.scss" />
     <title>Nowoczesne Systemy Grzewcze - Dariusz Głuszkiewicz</title>
     <link
@@ -68,11 +69,11 @@
               <span class="nav-logo-text">NSG</span>
             </a>
             <ul class="nav-desktop-anchors">
-              <li class="nav-list-item"><a href="#home">Home</a></li>
-              <li class="nav-list-item"><a href="#o-nas">O nas</a></li>
-              <li class="nav-list-item"><a href="#uslugi">Usługi</a></li>
-              <li class="nav-list-item"><a href="#finanse">Finanse</a></li>
-              <li class="nav-list-item"><a href="#kontakt">Kontakt</a></li>
+              <li class="nav-list-item"><a aria-label="Element nawigacji desktopowej odnoszący do Home" href="#home">Home</a></li>
+              <li class="nav-list-item"><a aria-label="Element nawigacji desktopowej odnoszący do sekcji O nas" href="#o-nas">O nas</a></li>
+              <li class="nav-list-item"><a aria-label="Element nawigacji desktopowej odnoszący do sekcji Usług" href="#uslugi">Usługi</a></li>
+              <li class="nav-list-item"><a aria-label="Element nawigacji desktopowej odnoszący do sekcji Finansów" href="#finanse">Finanse</a></li>
+              <li class="nav-list-item"><a aria-label="Element nawigacji desktopowej odnoszący do sekcji Kontaktu" href="#kontakt">Kontakt</a></li>
             </ul>
           </div>
         </div>
@@ -86,7 +87,7 @@
           />
           <span class="nav-logo-text">NSG</span>
         </a>
-        <div
+        <button
           class="nav-mobile-burger"
           aria-controls="nav-mobile-list"
           aria-expanded="false"
@@ -94,13 +95,13 @@
         >
           <div class="nav-mobile-burger-bar"></div>
           <div class="nav-mobile-burger-bar"></div>
-        </div>
+        </button>
         <ul id="nav-mobile-list" class="nav-mobile-list">
-          <li class="nav-list-item"><a href="#">Home</a></li>
-          <li class="nav-list-item"><a href="#o-nas">O nas</a></li>
-          <li class="nav-list-item"><a href="#uslugi">Usługi</a></li>
-          <li class="nav-list-item"><a href="#finanse">Finanse</a></li>
-          <li class="nav-list-item"><a href="#kontakt">Kontakt</a></li>
+          <li class="nav-list-item"><a aria-label="Element nawigacji mobilnej odnoszący do Home" href="#">Home</a></li>
+          <li class="nav-list-item"><a aria-label="Element nawigacji mobilnej odnoszący do sekcji O nas" href="#o-nas">O nas</a></li>
+          <li class="nav-list-item"><a aria-label="Element nawigacji mobilnej odnoszący do sekcji Usług" href="#uslugi">Usługi</a></li>
+          <li class="nav-list-item"><a aria-label="Element nawigacji mobilnej odnoszący do sekcji Finansów" href="#finanse">Finanse</a></li>
+          <li class="nav-list-item"><a aria-label="Element nawigacji mobilnej odnoszący do sekcji Kontaktu" href="#kontakt">Kontakt</a></li>
         </ul>
         <div class="nav-mobile-list-shadow"></div>
       </div>
@@ -491,6 +492,7 @@
         <div class="contact-ctn">
           <div class="contact-ctn-map">
             <iframe
+              title="Mapa przedstawiająca położenie biura NSG"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.268909388942!2d18.95379052684436!3d53.73408894698578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4702b1e44c52fa5d%3A0xcba5c15f54b6941c!2sNowoczesne%20Systemy%20Grzewcze%20Dariusz%20G%C5%82uszkiewicz!5e0!3m2!1sen!2spl!4v1690800945340!5m2!1sen!2spl"
               style="border: 0"
               allowfullscreen=""
@@ -500,16 +502,16 @@
           </div>
           <form action="mailer.php" class="contact-ctn-form">
             <div class="contact-input-ctn">
-              <input class="input" type="text" name="fullName" />
-              <label for="firstName_lastName">Imię i nazwisko</label>
+              <input aria-labelledby="fullNameLabel" class="input" type="text" name="fullName" />
+              <label id="fullNameLabel" for="fullName">Imię i nazwisko</label>
             </div>
             <div class="contact-input-ctn">
-              <input class="input" type="email" name="email" />
-              <label for="email">Email</label>
+              <input aria-labelledby="emailLabel" class="input" type="email" name="email" />
+              <label id="emailLabel" for="email">Email</label>
             </div>
             <div class="contact-input-ctn">
-              <textarea class="input" name="msg"></textarea>
-              <label for="msg">Wiadomość</label>
+              <textarea aria-labelledby="msgLabel" class="input" name="msg"></textarea>
+              <label id="msgLabel" for="msg">Wiadomość</label>
             </div>
             <button class="button primary breaker-btn">Skontaktuj się</button>
             <p class="error-info section-text"></p>
