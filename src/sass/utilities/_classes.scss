@@ -47,6 +47,37 @@
 	max-width: 1400px;
 }
 
+.img-loaders {
+  div {
+    &:nth-child(1){
+      background: url(./../img/galeria/galeria_0.webp);
+    }
+    &:nth-child(2){
+      background: url(./../img/galeria/galeria_1.webp);
+    }
+    &:nth-child(3){
+      background: url(./../img/galeria/galeria_2.webp);
+    }
+    &:nth-child(4){
+      background: url(./../img/galeria/galeria_3.webp);
+    }
+    &:nth-child(5){
+      background: url(./../img/galeria/galeria_4.webp);
+    }
+    &:nth-child(6){
+      background: url(./../img/galeria/galeria_5.webp);
+    }
+    &:nth-child(7){
+      background: url(./../img/galeria/galeria_6.webp);
+    }
+    &:nth-child(8){
+      background: url(./../img/galeria/galeria_7.webp);
+    }
+    &:nth-child(9){
+      background: url(./../img/galeria/galeria_8.webp);
+    }
+  }
+}
 
 .arrow {
   position: relative;

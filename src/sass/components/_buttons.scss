@@ -1,5 +1,10 @@
 @use '../abstracts' as *;
 
+button {
+  border: none;
+  background: none;
+}
+
 .button {
   position: relative;
   width: max-content;
