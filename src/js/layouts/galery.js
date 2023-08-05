@@ -9,8 +9,9 @@ let imgIndex;
 let IsPopUpActive = false;
 const handlePopUp = (e, index) => {
 	objectBg = e.target.getAttribute('src');
+  const refactoredObjectBg = objectBg.split('_')[0] + '_' + objectBg.split('_')[2]
 	popUp.classList.add('show-pop-up');
-	popUpImg.style.backgroundImage = `url(${objectBg})`;
+	popUpImg.style.backgroundImage = `url(${refactoredObjectBg})`;
 	popUp.classList.remove('close-animation');
 	imgIndex = index;
 	IsPopUpActive = true;
